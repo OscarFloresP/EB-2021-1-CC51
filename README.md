@@ -19,3 +19,14 @@ Para más información del dataset ver el pdf:
 La licencia utilizada es
 
 ## Bibliografía
+Kaggle (S/F). Kaggle Progression System. Recuperado de https://www.kaggle.com/progression [Consultado el 29 de junio del 2021]
+
+Mitchell. J (2017). Mitchell J. Recuperado de https://www.kaggle.com/datasnaek [Consultado el 29 de junio del 2021]
+
+Mitchell. J (2019). Trending YouTube Video Statistics: Daily statistics for trending YouTube videos. Recuperado de https://www.kaggle.com/datasnaek/youtube-new [Consultado el 29 de junio del 2021]
+
+Mitchell. J (2017). Trending YouTube Video Statistics and Comments: Daily statistics (views, likes, category, comments+) for trending YouTube videos. Recuperado de https://www.kaggle.com/datasnaek/youtube [Consultado el 29 de junio del 2021].
+
+Mitchell.J (S/F). Mitchell Jolly. Recuperado de https://uk.linkedin.com/in/mitchell-jolly-2bab06169?trk=public_profile_samename-profile [Consultado el 29 de junio del 2021]
+
+Wikipedia (2021). Glasgow. Recuperado de https://es.wikipedia.org/wiki/Glasgow [Consultado el 29 de junio del 2021]
