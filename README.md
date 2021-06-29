@@ -11,7 +11,7 @@ El objetivo de este examen final es aplicar los conocimientos aprendidos durante
 ## Descripción del Dataset
 El dataset a analizar es el de  Trending YouTube Video Statistics, la versión original es de kaggle.com creado por Mitchell Jolly, pero se ha modificado con la adición de 4 columnas adicionales (state, Iat, lon, geometry) para este trabajo. No obstante, el origen de los datos es el mismo y tiene al mismo creador del conjunto de datos. El dataset contiene información sobre los videos subidos a YouTube para conocer diversas características de ellos respecto a su ubicación geográfica por países. Estas características son la cantidad de vistas que tienen, cantidad de me gusta y no me gusta, categoría del video, etc. 
 
-Para mayor información del dataset: 
+Para más información del dataset ver el pdf:
 
 ## Conclusiones
 
