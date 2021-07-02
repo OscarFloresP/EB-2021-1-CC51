@@ -1,5 +1,5 @@
 #Inspección de Datos
-load("~/R/EB-Admin-Info/Data/DF_Extraido.RData")
+DFVideos_MX <- read.csv("~/R/EB-Admin-Info/Data/DF_Extraido.csv")
 nrow(DFVideos_MX)
 ncol(DFVideos_MX)
 colnames(DFVideos_MX)
