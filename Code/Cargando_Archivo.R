@@ -26,5 +26,6 @@ for (id in DFCategoria$id){
 DFVideos_MX$category[DFVideos_MX$category == "29"] <- DFCategoriaEx$titulo[17]
 DFVideos_MX$category[DFVideos_MX$category == "0"] <- 'Undefined'
 names(DFVideos_MX)[names(DFVideos_MX) == "ï..video_id"] <- "video_id"
-#Guardando el Dataframe Extraído
+#Guardando el Dataframe Extraído en Rdata y csv
+save(DFVideos_MX, file = "~/R/EB-Admin-Info/Data/DF_Extraido.RData")
 write.csv(DFVideos_MX, file = "~/R/EB-Admin-Info/Data/DF_Extraido.csv", row.names = FALSE)
