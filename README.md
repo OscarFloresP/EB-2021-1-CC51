@@ -18,6 +18,8 @@ A partir de las visualizaciones realizadas se pueden obtener conclusiones que re
 
 En cuanto a las proporciones de likes y dislikes y vistas y comentarios se obtiene que no necesariamente la categoría con mayor proporción en un área tendrá la mayor proporción en otra. Mientras que los fans de la categoría deportes suelen dejar más comentarios y vistas en relación, no hay un ratio muy grande en cuanto a likes y dislikes. Lo inverso sucede con la categoría educación, donde hay más variedad entre likes y dislikes, sin embargo no se hallan muchos comentarios en esa categoría de videos.
 
+En cuanto a la geografía por estado del país, se puede concluir que los estados con mayor cantidad de vistas son también los que tiene mayor cantidad de likes y dislikes, y viceversa para los que tienen la menor cantidad de vistas. Un ejemplo es Coahuila que tiene la mayor cantidad de vistas y la mayor cantidad de likes. Esto no es anormal, debido a que mientras más grande sean las vistas, tendrá mayores reacciones al video lo que permite que se de este fenómeno. 
+
 En el modelado se usó la regresión lineal que es un manera muy fácil de utilizar por lo que se pueden observar en el gráfico nos facilitó la obtención de datos. Se pudieron analizar los coeficientes de “Vistas” o “Me gusta” o “No me gusta” de los videos para un mejor entendimiento. Al final de cuentas resulta muy difícil predecir por sus valores tan cambiantes que tienen los datos de Mexico de youtube.
 
 ## Licencia
