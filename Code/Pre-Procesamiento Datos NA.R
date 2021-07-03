@@ -1,4 +1,5 @@
 #Pre Procesamiento
+DFVideos_MX <- read.csv("~/R/EB-Admin-Info/Data/DF_Extraido.csv")
 ValoresVacios <- is.na(DFVideos_MX)
 View(ValoresVacios)
 summary(ValoresVacios)
@@ -27,7 +28,7 @@ DFMexico_Limpio <- random.df(DFVideos_MX, c(8,9,10,11))
 Comprobacion_Aleatorio <- is.na(DFMexico_Limpio)
 summary(Comprobacion_Aleatorio)
 
-#Eliminando filas vacías en video_id
+#Eliminando filas con video_id vacíos
 View(DFMexico_Limpio)
 Vacios <- DFMexico_Limpio$video_id == ""
 summary(Vacios)
@@ -40,6 +41,59 @@ summary(N)
 DFMexico_Limpio <- subset(DFMexico_Limpio, video_id != "\\n")
 N <- DFMexico_Limpio$video_id == "\\n"
 summary(N)
+
+row.names(DFMexico_Limpio) <- NULL
+
+#Llenando valores vacíos
+Vacios <- DFMexico_Limpio$description == ""
+summary(Vacios)
+DFMexico_Limpio$description <- replace(DFMexico_Limpio$description, Vacios, "Sin descripción")
+
+Vacios <- DFMexico_Limpio$thumbnail_link == ""
+summary(Vacios)
+DFMexico_Limpio$thumbnail_link <- replace(DFMexico_Limpio$thumbnail_link, Vacios, "Link Inexistente")
+
+table(DFMexico_Limpio$ratings_disabled)
+table(DFMexico_Limpio$comments_disabled)
+table(DFMexico_Limpio$video_error_or_removed)
+
+Vacios <- DFMexico_Limpio$ratings_disabled == ""
+summary(Vacios)
+DFMexico_Limpio$ratings_disabled <- replace(DFMexico_Limpio$ratings_disabled, Vacios, "DESCONOCIDO")
+
+Vacios <- DFMexico_Limpio$comments_disabled == ""
+summary(Vacios)
+DFMexico_Limpio$comments_disabled <- replace(DFMexico_Limpio$comments_disabled, Vacios, "DESCONOCIDO")
+
+Vacios <- DFMexico_Limpio$video_error_or_removed == ""
+summary(Vacios)
+DFMexico_Limpio$video_error_or_removed <- replace(DFMexico_Limpio$video_error_or_removed, Vacios, "DESCONOCIDO")
+
+table(DFMexico_Limpio$ratings_disabled)
+table(DFMexico_Limpio$comments_disabled)
+table(DFMexico_Limpio$video_error_or_removed)
+
+Vacios <- DFMexico_Limpio$tags == ""
+summary(Vacios)
+DFMexico_Limpio$tags <- replace(DFMexico_Limpio$tags, Vacios, "Sin tags")
+
+Vacios <- DFMexico_Limpio$tags == "[none]"
+summary(Vacios)
+DFMexico_Limpio$tags <- replace(DFMexico_Limpio$tags, Vacios, "Sin tags")
+
+Vacios <- DFMexico_Limpio$title == ""
+summary(Vacios)
+DFMexico_Limpio$title <- replace(DFMexico_Limpio$title, Vacios, "Sin titulo")
+
+Vacios <- DFMexico_Limpio$channel_title == ""
+summary(Vacios)
+DFMexico_Limpio$channel_title <- replace(DFMexico_Limpio$channel_title, Vacios, "Sin canal")
+
+Vacios <- DFMexico_Limpio$trending_date == ""
+summary(Vacios)
+
+Vacios <- DFMexico_Limpio$publish_time == ""
+summary(Vacios)
 
 #Guardando Dataframe
 save(DFMexico_Limpio, file = "~R/EB-Admin-Info/Data/DF_Limpio.RData")
