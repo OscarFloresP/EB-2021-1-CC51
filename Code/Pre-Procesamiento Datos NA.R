@@ -35,6 +35,12 @@ DFMexico_Limpio <- subset(DFMexico_Limpio, video_id != "")
 Vacios <- DFMexico_Limpio$video_id == ""
 summary(Vacios)
 
+N <- DFMexico_Limpio$video_id == "\\n"
+summary(N)
+DFMexico_Limpio <- subset(DFMexico_Limpio, video_id != "\\n")
+N <- DFMexico_Limpio$video_id == "\\n"
+summary(N)
+
 #Guardando Dataframe
 save(DFMexico_Limpio, file = "~R/EB-Admin-Info/Data/DF_Limpio.RData")
 write.csv(DFMexico_Limpio, "DFMexicoVideos_Limpio.csv", row.names = FALSE)
