@@ -21,7 +21,7 @@ En cuanto a las proporciones de likes y dislikes y vistas y comentarios se obtie
 En el modelado se usó la regresión lineal que es un manera muy fácil de utilizar por lo que se pueden observar en el gráfico nos facilitó la obtención de datos. Se pudieron analizar los coeficientes de “Vistas” o “Me gusta” o “No me gusta” de los videos para un mejor entendimiento. Al final de cuentas resulta muy difícil predecir por sus valores tan cambiantes que tienen los datos de Mexico de youtube.
 
 ## Licencia
-La licencia utilizada es
+La licencia utilizada es MIT
 
 ## Bibliografía
 Kaggle (S/F). Kaggle Progression System. Recuperado de https://www.kaggle.com/progression [Consultado el 29 de junio del 2021]
