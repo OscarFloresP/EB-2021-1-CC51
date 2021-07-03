@@ -95,6 +95,34 @@ summary(Vacios)
 Vacios <- DFMexico_Limpio$publish_time == ""
 summary(Vacios)
 
+
+#Quitando los outliers
+
+boxplot(DFMexico_Limpio$likes, horizontal = TRUE)
+boxplot.stats(DFMexico_Limpio$likes)
+out<-DFMexico_Limpio$likes[DFMexico_Limpio$likes<17533]
+
+boxplot(out, horizontal = TRUE)
+boxplot.stats(out)
+out<-out[out<7265]
+
+boxplot(DFMexico_Limpio$views, horizontal = TRUE)
+boxplot.stats(DFMexico_Limpio$views)
+out<-DFMexico_Limpio$views[DFMexico_Limpio$views<17533]
+
+boxplot(out, horizontal = TRUE)
+boxplot.stats(out)
+out<-out[out<492021]
+
+boxplot(DFMexico_Limpio$dislikes, horizontal = TRUE)
+boxplot.stats(DFMexico_Limpio$dislikes)
+out<-DFMexico_Limpio$dislikes[DFMexico_Limpio$dislikes<647]
+
+boxplot(out, horizontal = TRUE)
+boxplot.stats(out)
+out<-out[out<508]
+
+
 #Guardando Dataframe
 save(DFMexico_Limpio, file = "~R/EB-Admin-Info/Data/DF_Limpio.RData")
 write.csv(DFMexico_Limpio, "DFMexicoVideos_Limpio.csv", row.names = FALSE)
